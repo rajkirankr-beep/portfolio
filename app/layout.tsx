@@ -17,9 +17,9 @@ const jbMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jordan Cole — Software Engineer",
+  title: "Rajkiran K R — Software Engineer",
   description:
-    "Portfolio and resume of Jordan Cole, a software engineer building systems in C, Java, PHP, and the web.",
+    "Portfolio and resume of Rajkiran K R, a software engineer building systems in C, Java, PHP, and the web.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
