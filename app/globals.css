@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #14120f;
+  color: #eae4da;
+  font-feature-settings: "ss01" on, "cv01" on;
+}
+
+/* Fixed grain layer — sits above the background, below content */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+/* Visible, deliberate focus ring — never remove focus outlines */
+:focus-visible {
+  outline: 2px solid #e0a868;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #c9884a;
+  color: #14120f;
+}
+
+/* Respect reduced motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Thin custom scrollbar to match the editorial dark aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #14120f;
+}
+::-webkit-scrollbar-thumb {
+  background: #211d19;
+  border: 2px solid #14120f;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #332c25;
+}
