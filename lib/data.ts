@@ -118,4 +118,5 @@ export const projects: Project[] = [
 export const socials = [
   { label: "GitHub", href: "https://github.com/rajkirankr-beep" },
   { label: "LinkedIn", href: "https://linkedin.com/" },
+  { label: "Instagram", href:"https://www.instagram.com/ra._.kiran/"}
 ];
