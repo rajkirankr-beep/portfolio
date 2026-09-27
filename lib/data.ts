@@ -21,7 +21,7 @@ export const heroMetrics = [
 export const manifesto = {
   eyebrow: "Manifesto",
   statement:
-    "I build things to understand how they work — from low-level systems to AI-powered applications, always learning by shipping.",
+    "I turn ambitious ideas into polished products, blending engineering and design to create experiences worth remembering.",
 };
 
 export const techStack = [
